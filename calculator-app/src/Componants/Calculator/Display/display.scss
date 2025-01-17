@@ -10,5 +10,9 @@
 
     &__result{
         margin-right: 7px;
+
+        &--error{
+            color: red;
+        }
     }
 }
