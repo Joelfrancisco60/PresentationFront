@@ -3,9 +3,9 @@ import Calculator from './Componants/Calculator/Calculator';
 
 function App() {
   return (
-    <div className='App'>
-      <Calculator />
-    </div>
+  <div className='App'>
+    <Calculator />
+  </div>
   );
 }
 

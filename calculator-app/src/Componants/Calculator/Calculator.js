@@ -8,11 +8,10 @@ const Calculator = () => {
   const [operator, setOperator] = useState(null);
   const [previousValue, setPreviousValue] = useState(null);
   const [isReset, setIsReset] = useState(false);
-  const [theme, setTheme] = useState(1);
 
   const handleThemeChange = (newTheme) => {
-    setTheme(newTheme);
     document.documentElement.setAttribute("data-theme", `theme-${newTheme}`);
+    document.documentElement.setAttribute("class", `theme-${newTheme}`);
   };
 
   const handleButtonClick = (buttonValue) => {

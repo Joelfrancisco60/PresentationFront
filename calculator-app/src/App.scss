@@ -6,63 +6,6 @@
 @import './Componants/Calculator/ThemeSwitcher/theme_switcher.scss';
 @import './Componants/Calculator/Keypad/Button/button.scss';
 
-:root {
-  --bg-color: #3b4664;
-  --button-bg-color: #e9e3db;
-  --display-bg-color: #171f32;
-  --display-text-color: #fffffc;
-  --keypad-bg-color: #242d44;
-  --button-text-color: #454b59;
-  --button-bg-equals: #d14031;
-  --button-text-equals: #fffef6;
-  --button-bg-delete: #657199;
-  --button-text-delete: #fdffff;
-  --theme-text-color: #fffffc;
-}
-
-[data-theme="theme-1"] {
-  --bg-color: #3b4664;
-  --button-bg-color: #e9e3db;
-  --display-bg-color: #171f32;
-  --display-text-color: #fffffc;
-  --keypad-bg-color: #242d44;
-  --button-text-color: #454b59;
-  --button-bg-equals: #d14031;
-  --button-text-equals: #fffef6;
-  --button-bg-delete: #657199;
-  --button-text-delete: #fdffff;
-  --theme-text-color: #fffffc;
-}
-
-[data-theme="theme-2"] {
-  --bg-color: #e6e6e6;
-  --button-bg-color: #eae3dc;
-  --display-bg-color: #eeeeee;
-  --display-text-color: #37372d;
-  --keypad-bg-color: #d3cdcd;
-  --button-text-color: #36362c;
-  --button-bg-equals: #c85402;
-  --button-text-equals: #fffcf5;
-  --button-bg-delete: #388286;
-  --button-text-delete: #ffffff;
-  --theme-text-color: #37372d;
-}
-
-[data-theme="theme-3"] {
-  --bg-color: #17052a;
-  --button-bg-color: #331b4d;
-  --display-bg-color: #1e0935;
-  --display-text-color: #ffe04a;
-  --keypad-bg-color: #1e0935;
-  --button-text-color: #ffe344;
-  --button-bg-equals: #01decf;
-  --button-text-equals: #132431;
-  --button-bg-delete: #56077c;
-  --button-text-delete: #fffcff;
-  --theme-text-color: #ffe04a;
-
-}
-
 .App {
   height: 100vh;
   margin: 0;
@@ -70,4 +13,42 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+$themes: (
+  theme-1: (
+    bg-color: $bg-color-theme-1,
+    button-bg-color: $button-bg-color-theme-1,
+    button-text-color: $button-text-color-theme-1
+  ),
+  theme-2: (
+    bg-color: #e6e6e6,
+    button-bg-color: #eae3dc,
+    button-text-color: #36362c
+  ),
+  theme-3: (
+    bg-color: #17052a,
+    button-bg-color: #331b4d,
+    button-text-color: #fffcff
+  )
+);
+
+@mixin theme($theme-name) {
+  $theme: map-get($themes, $theme-name);
+  
+  --bg-color: #{map-get($theme, bg-color)};
+  --button-bg-color: #{map-get($theme, button-bg-color)};
+  --button-text-color: #{map-get($theme, button-text-color)};
+}
+
+.theme-1 {
+  @include theme(theme-1);
+}
+
+.theme-2 {
+  @include theme(theme-2);
+}
+
+.theme-3 {
+  @include theme(theme-3);
 }
