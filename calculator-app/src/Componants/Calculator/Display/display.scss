@@ -1,7 +1,6 @@
 .display {
     width: 100%;
     background-color: var(--display-bg-color);
-    color: var(--text-color);
     text-align: right;
     padding: 15px 20px;
     border-radius: 10px;
@@ -10,6 +9,10 @@
 
     &__result{
         margin-right: 7px;
+
+        &--default{
+            color: var(--text-color);
+        }
 
         &--error{
             color: red;
