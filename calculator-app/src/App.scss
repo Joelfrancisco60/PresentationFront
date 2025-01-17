@@ -17,6 +17,7 @@
   --button-text-equals: #fffef6;
   --button-bg-delete: #657199;
   --button-text-delete: #fdffff;
+  --theme-text-color: #fffffc;
 }
 
 [data-theme="theme-1"] {
@@ -30,6 +31,7 @@
   --button-text-equals: #fffef6;
   --button-bg-delete: #657199;
   --button-text-delete: #fdffff;
+  --theme-text-color: #fffffc;
 }
 
 [data-theme="theme-2"] {
@@ -43,6 +45,7 @@
   --button-text-equals: #fffcf5;
   --button-bg-delete: #388286;
   --button-text-delete: #ffffff;
+  --theme-text-color: #37372d;
 }
 
 [data-theme="theme-3"] {
@@ -56,6 +59,8 @@
   --button-text-equals: #132431;
   --button-bg-delete: #56077c;
   --button-text-delete: #fffcff;
+  --theme-text-color: #ffe04a;
+
 }
 
 .App {

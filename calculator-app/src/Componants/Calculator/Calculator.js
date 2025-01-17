@@ -96,7 +96,7 @@ const Calculator = () => {
 
   return (
     <div className="calculator">
-      <ThemeSwitcher theme={theme} onThemeChange={handleThemeChange} />
+      <ThemeSwitcher onThemeChange={handleThemeChange} />
       <Display value={currentValue} />
       <Keypad onButtonClick={handleButtonClick} />
     </div>
