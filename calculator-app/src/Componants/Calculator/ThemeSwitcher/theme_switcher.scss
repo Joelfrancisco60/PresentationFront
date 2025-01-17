@@ -3,3 +3,29 @@
     justify-content: end;
     width: 100%;
 }
+
+.theme-switcher-container {
+    display: flex;
+    background-color: var(--keypad-bg-color);
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.theme-switcher-name {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    color: var(--theme-text-color);
+}
+
+.theme-switcher-button {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border-bottom: #434a59;
+    border: none;
+    font-size: 1.2rem;
+    padding: 6px;
+    margin: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
