@@ -1,0 +1,16 @@
+@import './scss/_colors';
+
+@import './Componants/Calculator/calculator.scss';
+@import './Componants/Calculator/Display/display.scss';
+@import './Componants/Calculator/Keypad/keypad.scss';
+@import './Componants/Calculator/ThemeSwitcher/theme_switcher.scss';
+@import './Componants/Calculator/Keypad/Button/button.scss';
+
+.App {
+  height: 100vh;
+  margin: 0;
+  background-color: #3b4664;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

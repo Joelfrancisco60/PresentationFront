@@ -1,5 +1,4 @@
 import React from "react";
-import "./Styles.scss";
 
 const ThemeSwitcher = ({ theme, onThemeChange }) => {
   return (
