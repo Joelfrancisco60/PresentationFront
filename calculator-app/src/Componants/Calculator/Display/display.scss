@@ -1,6 +1,6 @@
 .display {
-    background-color: #181f33;
-    color: white;
+    background-color: var(--display-bg-color);
+    color: var(--display-text-color);
     font-size: 2rem;
     text-align: right;
     padding: 15px;

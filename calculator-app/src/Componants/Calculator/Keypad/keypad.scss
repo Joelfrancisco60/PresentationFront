@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    background-color: $background-keypad-default;
+    background-color: var(--keypad-bg-color);
     padding: 20px;
     border-radius: 10px;
 }
