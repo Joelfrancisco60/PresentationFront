@@ -33,10 +33,11 @@ const Calculator = () => {
     if (isReset) {
       setCurrentValue(num);
       setIsReset(false);
-    } else {
+    } else if(currentValue < 999999999){
       setCurrentValue((prev) =>
         prev === "0" && num !== "." ? num : prev + num
       );
+      
     }
   };
 
