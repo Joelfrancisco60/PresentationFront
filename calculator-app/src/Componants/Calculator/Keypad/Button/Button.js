@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Styles.sass"
 
 const Button = ({ value, onClick }) => {
   return (
