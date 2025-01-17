@@ -2,7 +2,7 @@ import React from 'react';
 
 const Display = ({ value }) => {
   return <div className="display">
-    <span className="display__result">{value}</span>
+      <span className="display__result">{value}</span>
     </div>;
 };
 

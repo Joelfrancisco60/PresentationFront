@@ -14,6 +14,7 @@
     &.RESET{
         background-color: var(--button-bg-delete);
         color: var(--button-text-delete);
+        grid-column : span 2
     }
     &.DEL{
         background-color: var(--button-bg-delete);
@@ -23,5 +24,6 @@
     &.\={
         background-color: var(--button-bg-equals);
         color: var(--button-text-equals);
+        grid-column : span 2;
     }
 }
