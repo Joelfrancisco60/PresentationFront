@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Display from "./Display";
-import Keypad from "./Keypad";
-import ThemeSwitcher from "./ThemeSwitcher";
+import Display from "./Display/Display";
+import Keypad from "./Keypad/Keypad";
+import ThemeSwitcher from "./ThemeSwitcher/ThemeSwitcher";
 
 const Calculator = () => {
   const [currentValue, setCurrentValue] = useState("0");
