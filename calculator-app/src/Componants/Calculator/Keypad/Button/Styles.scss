@@ -1,6 +1,6 @@
 .button {
-    background-color: #eae3dc;
-    color: #434a59;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
     border: none;
     font-size: 1.2rem;
     padding: 15px;
@@ -8,13 +8,16 @@
     cursor: pointer;
 
     &.RESET{
-        background-color: #657199;
+        background-color: var(--button-bg-delete);
+        color: var(--button-text-delete);
     }
     &.DEL{
-        background-color: #657199;
+        background-color: var(--button-bg-delete);
+        color: var(--button-text-delete);
     }
 
     &.\={
-        background-color: #d14031;
+        background-color: var(--button-bg-equals);
+        color: var(--button-text-equals);
     }
 }

@@ -1,7 +1,59 @@
+:root {
+  --bg-color: #3b4664;
+  --button-bg-color: #e9e3db;
+  --display-bg-color: #171f32;
+  --display-text-color: #fffffc;
+  --keypad-bg-color: #242d44;
+  --button-text-color: #454b59;
+  --button-bg-equals: #d14031;
+  --button-text-equals: #fffef6;
+  --button-bg-delete: #657199;
+  --button-text-delete: #fdffff;
+}
+
+[data-theme="theme-1"] {
+  --bg-color: #3b4664;
+  --button-bg-color: #e9e3db;
+  --display-bg-color: #171f32;
+  --display-text-color: #fffffc;
+  --keypad-bg-color: #242d44;
+  --button-text-color: #454b59;
+  --button-bg-equals: #d14031;
+  --button-text-equals: #fffef6;
+  --button-bg-delete: #657199;
+  --button-text-delete: #fdffff;
+}
+
+[data-theme="theme-2"] {
+  --bg-color: #e6e6e6;
+  --button-bg-color: #eae3dc;
+  --display-bg-color: #eeeeee;
+  --display-text-color: #37372d;
+  --keypad-bg-color: #d3cdcd;
+  --button-text-color: #36362c;
+  --button-bg-equals: #c85402;
+  --button-text-equals: #fffcf5;
+  --button-bg-delete: #388286;
+  --button-text-delete: #ffffff;
+}
+
+[data-theme="theme-3"] {
+  --bg-color: #17052a;
+  --button-bg-color: #331b4d;
+  --display-bg-color: #1e0935;
+  --display-text-color: #ffe04a;
+  --keypad-bg-color: #1e0935;
+  --button-text-color: #ffe344;
+  --button-bg-equals: #01decf;
+  --button-text-equals: #132431;
+  --button-bg-delete: #56077c;
+  --button-text-delete: #fffcff;
+}
+
 .App {
   height: 100vh;
   margin: 0;
-  background-color: #3b4664;
+  background-color: var(--bg-color);
   display: flex;
   align-items: center;
   justify-content: center;

@@ -9,6 +9,12 @@ const Calculator = () => {
   const [operator, setOperator] = useState(null);
   const [previousValue, setPreviousValue] = useState(null);
   const [isReset, setIsReset] = useState(false);
+  const [theme, setTheme] = useState(1);
+
+  const handleThemeChange = (newTheme) => {
+    setTheme(newTheme);
+    document.documentElement.setAttribute("data-theme", `theme-${newTheme}`);
+  };
 
   const handleButtonClick = (buttonValue) => {
     if (!isNaN(buttonValue) || buttonValue === ".") {
@@ -90,7 +96,7 @@ const Calculator = () => {
 
   return (
     <div className="calculator">
-      <ThemeSwitcher theme={1} onThemeChange={() => {}} />
+      <ThemeSwitcher theme={theme} onThemeChange={handleThemeChange} />
       <Display value={currentValue} />
       <Keypad onButtonClick={handleButtonClick} />
     </div>
